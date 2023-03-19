@@ -1,0 +1,521 @@
+/* default mode => light mode */
+:root {
+    --bkgd-primary: #F2F2E4;
+    --bkgd-secondary: #d6d6c9;
+    --aside-color: #edede5;
+    --font-color-primary: #262626;
+    --font-color-secondary: #3F403B;
+    --btn-color: #727365;
+    --focus-color: #c6f194;
+    --hover-color: #b7b7b1;
+    --range-slider-color: #C5E1A5;
+    --range-track-color: #9CCC65;
+}
+[theme=light-theme]{
+    --bkgd-primary: #262626;
+    --bkgd-secondary: #3F403B;
+    --aside-color: #727365;
+    --font-color-primary: #F2F2E4;
+    --font-color-secondary: #d6d6c9;
+    --btn-color: #727365;
+    --focus-color: #107361;
+    --hover-color: #5a5a5a;
+    --range-slider-color: #0F5959;
+    --range-track-color: #0A3A40;
+}
+    
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--font-color-primary);
+
+}
+.hidden{
+    display: none;
+}
+/*====================== estilos generales ================================== */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    font-size: 1.2rem;
+}
+
+input[type=text] {
+    height: 2.5rem;
+    border: .0625rem solid #000;
+    border-radius: .3125rem;
+    margin: .3125rem 0rem;
+    padding: .5rem;
+    background-color: var(--bkgd-primary);
+}
+
+input[type=text]:focus {
+    outline: solid .125rem var(--focus-color)
+}
+
+input[type=number] {
+    height: 2.5rem;
+    border: .0625rem solid 000;
+    border-radius: .3125rem;
+    margin: .3125rem 0rem;
+    padding: .625rem;
+    font-size: 1rem;
+    background-color: var(--bkgd-primary);
+}
+
+input[type=number]:focus {
+    outline: solid .125rem var(--focus-color)
+}
+
+select {
+    height: 2.5rem;
+    border: .0625rem solid 000;
+    border-radius: .3125rem;
+    margin: .3125rem 0rem;
+    font-size: 1rem;
+    padding: .5rem;
+    background-color: var(--bkgd-primary);
+}
+
+select:focus {
+    outline: solid .125rem var(--focus-color);
+}
+
+/*~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~ */
+header {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bkgd-secondary);
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu__btn {
+    margin: .625rem .3125rem;
+    height: 2.25rem;
+    padding: .3125rem;
+    border: .0625rem;
+    border-radius: .3125rem;
+    color: var(--font-color-secondary);
+    background-color: var(--bkgd-primary);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.menu__btn i {
+    padding: .3125rem;
+}
+
+.menu__btn:hover {
+    background-color: var(--hover-color);
+}
+
+/* ~~~~~~~~~~~     MAIN  ~~~~~~~~~~~~~~~~~~~ */
+
+main {
+    height: 77vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--bkgd-primary);
+}
+
+.meme {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.meme__img {
+    background-color: #000;
+    width: 36rem;
+    height: 25.75rem;
+}
+
+.meme__text {
+    width: 36rem;
+    height: 5rem;
+    padding: .3125rem;
+    text-align: center;
+    font-size: 3rem;
+    color: #000;
+}
+
+.download__btn {
+    font-size: 1rem;
+    background-color: #4CC713;
+    color: #fff;
+    padding: 0.5rem;
+    border: .0625rem;
+    border-radius: .5rem;
+    cursor: pointer;
+
+}
+
+.download__btn:hover {
+    background-color: var(--hover-color);
+    color: #000;
+}
+
+.download__btn i {
+    color: white;
+    margin-right: .625rem;
+}
+
+.download__btn:hover i {
+    color: #000;
+}
+
+/* ~~~~~~~~~~~~   ASIDE  ~~~~~~~~~~~~~~~~~~ */
+aside {
+    background-color: var(--aside-color);
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    width: 17vw;
+    height: 100vh;
+    padding: 1.25rem .625rem;
+}
+
+.panel__title {
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.controller__title {
+    padding: .625rem 0rem;
+    font-size: 1rem;
+}
+
+.panel__controller {
+    margin: .3125rem .3125rem
+}
+
+/* _________________  IMAGEN ________________ */
+
+.img-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* -----URL----- */
+.url {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=url] {
+    background-color: var(--bkgd-primary);
+    height: 2.5rem;
+    border: .0625rem solid black;
+    border-radius: .3125rem;
+}
+
+input[type=url]:focus {
+    outline: solid .125rem var(--focus-color);
+}
+
+
+/* -----FONDO----- */
+.bkgd {
+    display: flex;
+    flex-direction: column;
+}
+
+.controller__bkgd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bkgd__color,.bkgd__effect{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: .0625rem solid #000;
+    border-radius: .5rem;
+    padding: .3125rem;
+    background-color: var(--bkgd-primary);
+}
+.bkgd__effect{
+    margin: 0;
+}
+
+input[type=color] {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    height: 25px;
+    padding: 0;
+    width: 25px;
+
+}
+::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+::-webkit-color-swatch {
+    border: 0;
+    border-radius: 50%;
+}
+::-moz-color-swatch {
+    border: 0;
+    border-radius: 50%;
+}
+
+/* -----FILTROS----- */
+.filters {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type='range'] {
+    padding: .3125rem;
+    background-color: var(--aside-color);
+}
+
+/* En los navegadores de tipo webkit ( Google Chrome, Opera, etcstar ) tenemos que
+anular los estilos con los cuales las barras de desplazamiento vienen de fabrica.
+Para esto utilizamos -webkit-appearance: none;
+http://w3.unpocodetodo.info/css3/input-type-range.php*/
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+/* Para dar estilo al "thumb" ( el botón o el control de la barra de desplazamiento )
+utilizamos estas reglas de estilo:
+( En los navegadores de tipo webkit necesitamos dar un margin-top negativo,
+ por ejemplo margin-top: -0.5625rem.  */
+input[type=range]::-webkit-slider-thumb {
+    margin-top: -0.3125rem;
+    background-color: var(--range-slider-color);
+    width: .9375rem;
+    height: .9375rem;
+    border: .0625rem solid var(--range-slider-color);
+    border-radius: 50%;
+}
+
+input[type=range]::-moz-range-thumb {
+    background-color: var(--range-slider-color);
+    width: .9375rem;
+    height: .9375rem;
+    border: .0625rem solid var(--range-slider-color);
+    border-radius: 50%;
+}
+
+/* Estilo al "track" o la barra de desplazamiento : */
+input[type=range]::-webkit-slider-runnable-track {
+    background-color: var(--range-track-color);
+    height: .3125rem;
+    border-radius: .625rem;
+}
+
+input[type=range]::-moz-range-track {
+    background-color: var(--range-track-color);
+    height: .3125rem;
+    border-radius: .625rem;
+}
+
+/* -----BOTON RESTABLECER----- */
+.panel__btn {
+    margin-top: .3125rem;
+    border: .0625rem solid var(--btn-color);
+    border-radius: .5rem;
+    padding: .5rem;
+    width: fit-content;
+    background-color: var(--bkgd-primary);
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.panel__btn:hover {
+    background-color: var(--hover-color);
+}
+
+/* _________________  TEXTO  ________________ */
+/* -----TEXTO SUPERIOR E INFERIOR----- */
+.text {
+    margin: .625rem 0rem .1875rem;
+    display: flex;
+    flex-direction: column;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+}
+.checkbox input {
+    flex-grow: 0.5;
+}
+.checkbox span{
+    flex-grow: 10;
+}
+/* -----FUENTE----- */
+.font {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.alignment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .3125rem;
+}
+
+.alignment input {
+    width: 45%;
+}
+
+.alignment__btn {
+    width: 2.2rem;
+    height: 2.5rem;
+    background-color: var(--bkgd-primary);
+    border: .0625rem solid var(--btn-color);
+    border-radius: .3125rem;
+    cursor: pointer;
+}
+.alignment__btn:hover{
+    background-color: var(--hover-color);
+}
+/* -----COLOR Y FONDO----- */
+.color {
+    display: flex;
+    justify-content: space-between;
+}
+
+.controller__color {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.color__selector, .bkgd__selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 2.5rem;
+    width: 7rem;
+    border: .0625rem solid black;
+    border-radius: .3125rem;
+    padding: .625rem;
+    margin-top: .3125rem;
+    background-color:var(--bkgd-primary);
+}
+
+.controller__color input,
+.controller__bkgd input {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: none;
+}
+
+.controller__bkgd input::-webkit-color-swatch {
+    border-radius: 100%;
+    border: .0625rem solid black
+}
+
+.controller__color input::-webkit-color-swatch {
+    border-radius: 100%;
+    border: .0625rem solid black
+}
+
+.controller__bkgd input::-moz-color-swatch {
+    border-radius: 100%;
+    border: .0625rem solid black
+}
+
+.controller__color input::-moz-color-swatch {
+    border-radius: 100%;
+    border: .0625rem solid black
+} 
+
+/* ----- CONTORNO ----- */
+.controller__outline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.outline__btn {
+    font-size: 0.9rem;
+    height: 2.5rem;
+    border: .0625rem solid black;
+    border-radius: .3125rem;
+    padding: .625rem;
+    background-color: var(--bkgd-primary);
+    cursor: pointer;
+} 
+.outline__btn:hover{
+    background-color: var(--hover-color)
+}
+/* -----  ESPACIADO ----- */
+/* ----- INTERLINEADO ----- */
+.spacing,.leading {
+    display: flex;
+    flex-direction: column;
+} 
+/* ~~~~~~~~~~~   FOOTER  ~~~~~~~~~~~~~~~~~~~ */
+footer {
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bkgd-secondary);
+}
+
+.footer__ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__ul li {
+    padding: .5rem;
+    margin: 0.5rem;
+}
+
+.footer__ul li:hover {
+    background-color: var(--hover-color);
+    padding: .5rem;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+
+a:visited {
+    color: var(--font-color-primary);
+}
+
+a:link {
+    color: var(--font-color-primary);
+}
+
+.footer__text {
+    font-family: 'Times New Roman', Times, serif;
+}
