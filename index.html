@@ -11,18 +11,23 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
-    <link id="styles" rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Generador de Memes</title>
 </head>
 
-<body theme="light-theme">
+<body >
     <header class="header">
         <h1 class="header__title">Generador de memes</h1>
         <div class="header__menu">
-            <button class="menu__btn"><i class="fa-regular fa-image"></i>Imagen</button>
-            <button class="menu__btn"><i class="fa-solid fa-font"></i>Texto</button>
-            <button class="menu__btn"><i class="fa-solid fa-lightbulb"></i>Modo oscuro</button>
+            <button class="menu__btn" id="img-btn"><i class="fa-regular fa-image"></i>Imagen</button>
+            <button class="menu__btn" id="text-btn"><i class="fa-solid fa-font"></i>Texto</button>
+            <button class="menu__btn" id="switch-theme">
+                <i class="fa-regular fa-lightbulb hidden" id="lightbulb-on"></i>
+                <i class="fa-solid fa-lightbulb" id="lightbulb-off"></i>
+                <span id="switch-text">Modo Oscuro</span>
+            </button>
         </div>
+        
     </header>
     <!-- MEME CONTAINER -->
     <main>
@@ -35,7 +40,7 @@
             meme</button>
     </main>
     <!-- PANEL DE IMAGEN este panel va a aparecer cuando el usuario haga click en el boton "Imagen" del menu del header -->
-    <aside class="img-panel" >
+    <aside class="img__panel">
         <!-- Boton para cerrar panel lateral aparece cuando el ancho de la pantalla es menor a 1300px -->
         <button class="close__btn" id="close__btn" hidden aria-label="cerrar panel">
             <i class="fa-sharp fa-solid fa-circle-xmark"></i>
@@ -100,7 +105,7 @@
         <button class="panel__btn" id="restore__btn">Reestablecer filtros</button>
     </aside>
     <!-- PANEL DE TEXTO -->
-    <aside class="text-panel" hidden>
+    <aside class="text__panel">
         <h2 class="panel__title">TEXTO</h2>
         <!-- TEXTO SUPERIOR -->
         <div class="panel__controller text">
@@ -164,9 +169,9 @@
         </div>
         <!-- fondo transparente -->
         <div class="checkbox">
-                <input type="checkbox" name="transparent-bkdg" id="transparent__checkbox">
-                <span> Fondo transparente</span>
-            </div>
+            <input type="checkbox" name="transparent-bkdg" id="transparent__checkbox">
+            <span> Fondo transparente</span>
+        </div>
         <!-- CONTORNO DE TEXTO -->
         <div class="panel__controller outline" id="outline__text">
             <h3 class="controller__title">CONTORNO</h3>

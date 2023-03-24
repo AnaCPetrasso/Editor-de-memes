@@ -14,9 +14,10 @@ Este es un generador de memes creado para presentar como profecto final del **M�
 - [Sobre mi](#sobre-mi-👩‍💻) 
 ---  
 ## Sobre la pagina 🖥️
+
 ### Estructura 
 
-El diseño de la aplicación  se baso en el modelo pedido por la catedra que podes ver [aqui](https://frontend-proyecto-meme.adaitw.org/). Lo importante de este trabajo es la impimentación de JavaScript para las distintas funcionalidades.
+El diseño de la aplicación  se baso en el modelo pedido por la catedra que podes ver [aqui](https://frontend-proyecto-meme.adaitw.org/). Lo importante de este trabajo es la impimentación de JavaScript para las distintas funcionalidades que permiten editar el meme.
 
 ### Paleta de colores
 La paleta de colores  es:
@@ -32,7 +33,7 @@ La paleta de colores  es:
 - #9CCC65
 
 ### Fuente
-La fuente usada es **Open Sans**
+La fuente usada par la pagina es **Open Sans**
 
 ### Imágenes 
 Los iconos utilizados son de: 

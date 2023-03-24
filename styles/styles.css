@@ -8,10 +8,11 @@
     --btn-color: #727365;
     --focus-color: #c6f194;
     --hover-color: #b7b7b1;
-    --range-slider-color: #C5E1A5;
-    --range-track-color: #9CCC65;
+    --range-slider-color: #F2F2E4;
+    --range-track-color: #727365;
 }
-[theme=light-theme]{
+/* color palet for dark mode */
+[theme=dark-theme]{
     --bkgd-primary: #262626;
     --bkgd-secondary: #3F403B;
     --aside-color: #727365;
@@ -20,11 +21,9 @@
     --btn-color: #727365;
     --focus-color: #107361;
     --hover-color: #5a5a5a;
-    --range-slider-color: #0F5959;
-    --range-track-color: #0A3A40;
+    --range-slider-color: #262626;
+    --range-track-color: #3F403B;
 }
-    
-
 * {
     margin: 0;
     padding: 0;
@@ -36,6 +35,8 @@
 .hidden{
     display: none;
 }
+
+
 /*====================== estilos generales ================================== */
 ul {
     list-style: none;
@@ -124,6 +125,15 @@ header {
 .menu__btn:hover {
     background-color: var(--hover-color);
 }
+#switch-theme{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#switch-text{
+    width: 80%;
+}
 
 /* ~~~~~~~~~~~     MAIN  ~~~~~~~~~~~~~~~~~~~ */
 
@@ -210,7 +220,7 @@ aside {
 
 /* _________________  IMAGEN ________________ */
 
-.img-panel {
+.panel {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -519,3 +529,4 @@ a:link {
 .footer__text {
     font-family: 'Times New Roman', Times, serif;
 }
+/*====================== responsive design ================================== */
