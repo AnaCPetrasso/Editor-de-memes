@@ -30,7 +30,7 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     color: var(--font-color-primary);
-
+    font-size: 15px;
 }
 .hidden{
     display: none;
@@ -166,7 +166,7 @@ main {
 
 .meme__img {
     background-color: #000;
-    height: 25.75rem;
+    height: 100%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
