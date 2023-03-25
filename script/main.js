@@ -40,19 +40,52 @@ $("#url").addEventListener("input", () => {
 })
 // ------------------------- TEXT PANEL FUNCTIONALITIES
 //modify text 
-//top text  TODO:falta agregar "sin texto superior"
+//TOP TEXT 
 $("#top__text").addEventListener("input", () => {
     $("#meme__top__text").innerText = $("#top__text").value
 })
-//bottom text
+$("#top__text__checkbox").addEventListener("input",()=>{
+    const isChecked = $("#top__text__checkbox").checked
+    if (isChecked){
+        $("#meme__top__text").classList.add("hidden")
+    }
+    else{
+        $("#meme__top__text").classList.remove("hidden")
+    }
+})
+//BOTTOM TEXT
 $("#bottom__text").addEventListener("input", () => {
     $("#meme__bottom__text").innerText = $("#bottom__text").value
 })
-//modify font size
-let elements = document.querySelectorAll('.meme__text');
-for (const element of elements) {
+$("#bottom__text__checkbox").addEventListener("input",()=>{
+    const isChecked = $("#bottom__text__checkbox").checked
+    if (isChecked){
+        $("#meme__bottom__text").classList.add("hidden")
+    }
+    else{
+        $("#meme__bottom__text").classList.remove("hidden")
+    }
+})
+//FONT
+let memeText = document.querySelectorAll('.meme__text');
+for (const element of memeText) {
+    //font size 
     $("#font__size").addEventListener("input", () => {
         element.style.fontSize = `${$("#font__size").value}px`
     })
+    //modify aligment
+    //aligment-left
+    $("#alignment__left").addEventListener("click", () => {
+        element.style.textAlign = "left"
+    })
+    //aligment-center
+    $("#alignment__center").addEventListener("click", () => {
+        element.style.textAlign = "center"
+    })
+    //aligment-right
+    $("#alignment__right").addEventListener("click", () => {
+        element.style.textAlign = "right"
+    })
+
 }
-//modify aligment
+
