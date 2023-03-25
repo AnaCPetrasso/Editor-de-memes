@@ -1,5 +1,10 @@
 const $ = (selector) => document.querySelector(selector)
-//evento pa ra cambiar de modo claro a modo oscuro
+const initialize = ()=>{
+    $("#top__text").value="" //hago esto para que al refrescar la pagina no me quede el texto anterior 
+    $("#bottom__text").value=""
+}
+initialize()
+//Event to switch to darkmode 
 $("#switch-theme").addEventListener("click",()=>{
     const currentTheme = $("body").getAttribute("theme")
     if (currentTheme){
@@ -15,7 +20,7 @@ $("#switch-theme").addEventListener("click",()=>{
         $("#switch-text").innerText = "Modo claro"
     }
 })
-//Event to change between panels 
+//Events to change between panels 
 $("#text-btn").addEventListener("click",()=>{
     $(".img__panel").classList.add("hidden")
     $(".text__panel").classList.remove("hidden")
@@ -25,5 +30,11 @@ $("#img-btn").addEventListener("click",()=>{
     $(".img__panel").classList.remove("hidden")
 })
 
-
+// TEXT PANEL FUNCTIONALITIES
+$("#top__text").addEventListener("input",()=>{
+    $("#meme__top__text").innerText = $("#top__text").value
+})
+$("#bottom__text").addEventListener("input",()=>{
+    $("#meme__bottom__text").innerText = $("#bottom__text").value
+})
 
