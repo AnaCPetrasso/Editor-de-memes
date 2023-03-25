@@ -32,9 +32,9 @@
     <!-- MEME CONTAINER -->
     <main>
         <div class="meme">
-            <p class="meme__text top">TOP TEXT</p>
+            <p class="meme__text" id="meme__top__text">TOP TEXT</p>
             <div class="meme__img"></div>
-            <p class="meme__text bottom">BOTTOM TEXT</p>
+            <p class="meme__text" id="meme__bottom__text">BOTTOM TEXT</p>
         </div>
         <button class="download__btn" id="download__btn"><i class="fa-solid fa-download"></i>Descargar
             meme</button>
@@ -49,7 +49,7 @@
         <!-- URL -->
         <div class="panel__controller url">
             <h3 class="controller__title">URL</h3>
-            <input type="url" name="url" class="control__url">
+            <input type="url" name="url" class="control__url" placeholder="https://exampel.com">
         </div>
         <!-- FONDO -->
         <div class="panel__controller bkgd">
@@ -110,7 +110,8 @@
         <!-- TEXTO SUPERIOR -->
         <div class="panel__controller text">
             <h3 class="controller__title">TEXTO SUPERIOR</h3>
-            <input type="text" name="top-text" id="top-text" aria-label="texto superior" placeholder="TOP TEXT">
+            <textarea name="top__text" id="top__text" cols="10" rows="1" placeholder="TOP TEXT"></textarea>
+            
         </div>
         <div class="checkbox">
             <input type="checkbox" name="top-text__checkbox " id="top-text__checkbox">
@@ -119,8 +120,7 @@
         <!-- TEXTO INFERIOR -->
         <div class="panel__controller text">
             <h3 class="controller__title">TEXTO INFERIOR</h3>
-            <input type="text" name="bottom-text" id="bottom-text" aria-label="texto inferior"
-                placeholder="BOTTOM TEXT">
+            <textarea name="bottom__text" id="bottom__text" cols="10" rows="1" placeholder="BOTTOM TEXT"></textarea>
         </div>
         <div class="checkbox">
             <input type="checkbox" name="bottom-text__checkbox " id="bottom-text__checkbox">
