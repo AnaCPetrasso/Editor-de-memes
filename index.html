@@ -15,7 +15,7 @@
     <title>Generador de Memes</title>
 </head>
 
-<body >
+<body>
     <header class="header">
         <h1 class="header__title">Generador de memes</h1>
         <div class="header__menu">
@@ -27,7 +27,7 @@
                 <span id="switch-text">Modo Oscuro</span>
             </button>
         </div>
-        
+
     </header>
     <!-- MEME CONTAINER -->
     <main>
@@ -49,7 +49,7 @@
         <!-- URL -->
         <div class="panel__controller url">
             <h3 class="controller__title">URL</h3>
-            <input type="url" name="url" class="control__url" placeholder="https://exampel.com">
+            <input type="url" name="url" id="url" placeholder="https://example.com">
         </div>
         <!-- FONDO -->
         <div class="panel__controller bkgd">
@@ -111,7 +111,7 @@
         <div class="panel__controller text">
             <h3 class="controller__title">TEXTO SUPERIOR</h3>
             <textarea name="top__text" id="top__text" cols="10" rows="1" placeholder="TOP TEXT"></textarea>
-            
+
         </div>
         <div class="checkbox">
             <input type="checkbox" name="top-text__checkbox " id="top-text__checkbox">
@@ -142,7 +142,7 @@
             </select>
             <!-- alineación de fuente-->
             <div class="alignment">
-                <input type="number" id="font__size" min="1" placeholder="40">
+                <input type="number" id="font__size" min="12" placeholder="40">
                 <button class="alignment__btn"><i class="fa-solid fa-align-left"></i></button>
                 <button class="alignment__btn"><i class="fa-solid fa-align-center"></i></button>
                 <button class="alignment__btn"><i class="fa-solid fa-align-right"></i></button>

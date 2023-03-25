@@ -49,8 +49,15 @@ a {
 i {
     font-size: 1.2rem;
 }
-input[type=url]{
+input[type=url] {
+    background-color: var(--bkgd-primary);
+    height: 2.5rem;
+    border: .0625rem solid black;
+    border-radius: .3125rem;
     padding: .5rem;
+}
+input[type=url]:focus {
+    outline: solid .125rem var(--focus-color);
 }
 textarea{
     height: 2.5rem;
@@ -160,13 +167,16 @@ main {
 .meme__img {
     background-color: #000;
     height: 25.75rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .meme__text {
     height: fit-content;
     padding: 2.1875rem 50px;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #000;
 }
 
@@ -235,16 +245,7 @@ aside {
     flex-direction: column;
 }
 
-input[type=url] {
-    background-color: var(--bkgd-primary);
-    height: 2.5rem;
-    border: .0625rem solid black;
-    border-radius: .3125rem;
-}
 
-input[type=url]:focus {
-    outline: solid .125rem var(--focus-color);
-}
 
 
 /* -----FONDO----- */
@@ -272,7 +273,6 @@ input[type=url]:focus {
 .bkgd__effect{
     margin: 0;
 }
-
 input[type=color] {
     background: none;
     border: 0;
@@ -280,7 +280,6 @@ input[type=color] {
     height: 25px;
     padding: 0;
     width: 25px;
-
 }
 ::-webkit-color-swatch-wrapper {
     padding: 0;
