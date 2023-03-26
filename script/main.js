@@ -160,6 +160,14 @@ const textPanel = () => {
         })
     }
 }
+//_______________________DOWNLOAD MEME____________________
+const downloadMeme = () => {
+    domtoimage.toBlob(document.getElementById('meme'))
+    .then(function (blob) {
+        window.saveAs(blob, 'my-node.png');
+    });
+}
+$("#download__btn").addEventListener("click", downloadMeme)
 //_______________________THEME____________________
 //to switch between dark and light mode
 $("#switch-theme").addEventListener("click", () => {
