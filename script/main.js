@@ -1,15 +1,15 @@
 const $ = (selector) => document.querySelector(selector)
 
 const initialize = () => {
-    //hago esto para que al refrescar la pagina no me quede el texto anterior 
     $("#top__text").value = ""
     $("#bottom__text").value = ""
     $("#url").value = ""
     $("#font__size").value = ""
     $("#font__selector").value = "Impact, fantasy"
     $("#text__color").value=""
-    $("#text___bkgd").value="#ffffff" //TODO: MODIFICAR VALUE APRA QUE SEA BLANCO 
+    $("#text___bkgd").value="#ffffff" 
     $("#transparent__checkbox").checked = ""
+    $("#bkgd__color").value = "#ffffff"
 }
 initialize()
 //Event to switch to darkmode 
@@ -38,12 +38,60 @@ $("#img-btn").addEventListener("click", () => {
     $(".img__panel").classList.remove("hidden")
 })
 // -------------------------- IMG PANEL FUNCTIONALITIES
+//URL
 $("#url").addEventListener("input", () => {
-    const urlImg = $("#url").value
-    $(".meme__img").style.backgroundImage = `url(${urlImg})`
+   $(".meme__img").style.backgroundImage = `url(${$("#url").value})`
 })
+//BKGD
+//bkgd color
+$("#bkgd__color").addEventListener("input",()=>{
+    $(".meme__img").style.backgroundColor = $("#bkgd__color").value
+    $("#bkgd__color__code").innerText = `${$("#bkgd__color").value}`
+})
+//bkdg effect
+$("#bkgd__effect").addEventListener("input",()=>{
+    $(".meme__img").style.backgroundBlendMode = $("#bkgd__effect").value
+})
+//FILTERS
+//brightness
+$("#brightness").addEventListener("input",()=>{
+    $(".meme__img").style.filter = `brightness(${$("#brightness").value})`
+})
+//opacity
+$("#opacity").addEventListener("input",()=>{
+    $(".meme__img").style.filter = `opacity(${$("#opacity").value})`
+})
+//contrast
+$("#contrast").addEventListener("input",()=>{
+    $(".meme__img").style.filter = `contrast(${$("#contrast").value}%)`
+})
+//blur
+$("#blur").addEventListener("input",()=>{
+    $(".meme__img").style.filter = `blur(${$("#blur").value}px)`
+})
+//grayscale
+$("#grayscale").addEventListener("input",()=>{
+    $(".meme__img").style.filter = `grayscale(${$("#grayscale").value}%)`
+})
+//sepia
+$("#sepia").addEventListener("input",()=>{
+    $(".meme__img").style.filter = `sepia(${$("#sepia").value})`
+})
+//hue
+$("#hue").addEventListener("input",()=>{
+    $(".meme__img").style.filter = `hue-rotate(${$("#hue").value}deg)`
+})
+
+//saturation
+$("#saturation").addEventListener("input",()=>{
+    $(".meme__img").style.filter = `saturate(${$("#saturation").value}%)`
+})
+//invert
+$("#invert").addEventListener("input",()=>{
+    $(".meme__img").style.filter = `invert(${$("#invert").value})`
+})
+
 // ------------------------- TEXT PANEL FUNCTIONALITIES
-//modify text 
 //TOP TEXT 
 $("#top__text").addEventListener("input", () => {
     $("#meme__top__text").innerText = $("#top__text").value

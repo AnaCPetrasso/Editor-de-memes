@@ -172,6 +172,8 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     z-index: 0;
+    background-blend-mode: unset;
+    filter: brightness(1) opacity(1) contrast(100%) blur(0px) grayscale(0%) sepia(0%) hue-rotate(0deg) saturate(100%) invert(0);
 }
 
 .meme__text {
@@ -182,6 +184,7 @@ main {
     color: #000;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: #fff;
+    
     z-index: 1;
     line-height: 1;
 }
@@ -210,7 +213,6 @@ main {
     border: .0625rem;
     border-radius: .5rem;
     cursor: pointer;
-
 }
 
 .download__btn:hover {

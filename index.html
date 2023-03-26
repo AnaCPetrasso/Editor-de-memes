@@ -58,34 +58,34 @@
             <div class="controller__bkgd">
                 <div class="bkgd__color">
                     <input type="color" name="bkgd__color" id="bkgd__color" value="#FFFFFF">
-                    <label for="bkgd__color">#FFFFFF</label>
+                    <span id="bkgd__color__code">#FFFFFF</span>
                 </div>
                 <select name="bkgd__effect" id="bkgd__effect" class="bkgd__effect">
-                    <option value="ninguno" selected>Ninguno</option>
-                    <option value="aclarar">Aclarar</option>
-                    <option value="oscurecer">Oscurecer</option>
-                    <option value="diferencia">Diferencia</option>
-                    <option value="luminosidad">Luminosidad</option>
-                    <option value="multiplicar">Multiplicar</option>
+                    <option value="unset" selected>Ninguno</option>
+                    <option value="lighten">Aclarar</option>
+                    <option value="darken">Oscurecer</option>
+                    <option value="difference">Diferencia</option>
+                    <option value="luminosity">Luminosidad</option>
+                    <option value="multiply">Multiplicar</option>
                 </select>
             </div>
         </div>
         <!-- FILTROS  -->
         <div class="panel__controller filters">
             <h3 class="controller__title">FILTROS</h3>
-            <!-- brillo -->
+            <!-- brightness -->
             <label for="brightness">Brillo</label>
             <input type="range" name="brightness__controller" id="brightness" min="0" max="1" step="0.1" value="1">
-            <!-- opacidad -->
+            <!-- opacity -->
             <label for="opacity">Opacidad</label>
             <input type="range" name="opacity__controller" id="opacity" min="0" max="1" step="0.1" value="1">
-            <!-- contraste  -->
+            <!-- contrast  -->
             <label for="contrast">Contraste</label>
             <input type="range" name="contrast__controller" id="contrast" min="100" max="1000" step="1" value="100">
-            <!-- desenfoque -->
+            <!-- blur -->
             <label for="blur">Desenfoque</label>
             <input type="range" name="blur__controller" id="blur" min="0" max="10" step="0.1" value="0">
-            <!-- escala de grises -->
+            <!-- grayscale -->
             <label for="grayscale">Escala de grises</label>
             <input type="range" name="grayscale__controller" id="grayscale" min="0" max="100" step="1" value="0">
             <!-- sepia -->
@@ -94,11 +94,11 @@
             <!-- HUE -->
             <label for="hue">HUE</label>
             <input type="range" name="hue__controller" id="hue" min="0" max="359" step="1" value="0">
-            <!-- saturación -->
+            <!-- saturation -->
             <label for="saturation">Saturación</label>
             <input type="range" name="saturation__controller" id="saturation" min="100" max="1000" step="10"
                 value="100">
-            <!-- negativo -->
+            <!-- invert -->
             <label for="invert">Negativo</label>
             <input type="range" name="invert__controller" id="invert" min="0" max="1" step="0.1" value="0">
         </div>
