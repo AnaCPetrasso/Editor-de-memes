@@ -8,7 +8,7 @@
     --btn-color: #727365;
     --focus-color: #c6f194;
     --hover-color: #b7b7b1;
-    --range- -color: #F2F2E4;
+    --range--color: #F2F2E4;
     --range-track-color: #727365;
 }
 /* color palet for dark mode */
@@ -21,7 +21,7 @@
     --btn-color: #727365;
     --focus-color: #107361;
     --hover-color: #5a5a5a;
-    --range- -color: #262626;
+    --range--color: #262626;
     --range-track-color: #3F403B;
 }
 * {
@@ -212,6 +212,8 @@ main {
     border: .0625rem;
     border-radius: .5rem;
     cursor: pointer;
+    position: fixed;
+    bottom: 6.25rem;
 }
 
 .download__btn:hover {
