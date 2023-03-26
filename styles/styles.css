@@ -8,7 +8,7 @@
     --btn-color: #727365;
     --focus-color: #c6f194;
     --hover-color: #b7b7b1;
-    --range-slider-color: #F2F2E4;
+    --range- -color: #F2F2E4;
     --range-track-color: #727365;
 }
 /* color palet for dark mode */
@@ -21,7 +21,7 @@
     --btn-color: #727365;
     --focus-color: #107361;
     --hover-color: #5a5a5a;
-    --range-slider-color: #262626;
+    --range- -color: #262626;
     --range-track-color: #3F403B;
 }
 * {
@@ -184,7 +184,6 @@ main {
     color: #000;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: #fff;
-    
     z-index: 1;
     line-height: 1;
 }
@@ -334,8 +333,8 @@ anular los estilos con los cuales las barras de desplazamiento vienen de fabrica
 Para esto utilizamos -webkit-appearance: none;
 http://w3.unpocodetodo.info/css3/input-type-range.php*/
 input[type='range'],
-input[type='range']::-webkit-slider-runnable-track,
-input[type='range']::-webkit-slider-thumb {
+input[type='range']::-webkit- -runnable-track,
+input[type='range']::-webkit- -thumb {
     -webkit-appearance: none;
 }
 
@@ -343,25 +342,25 @@ input[type='range']::-webkit-slider-thumb {
 utilizamos estas reglas de estilo:
 ( En los navegadores de tipo webkit necesitamos dar un margin-top negativo,
  por ejemplo margin-top: -0.5625rem.  */
-input[type=range]::-webkit-slider-thumb {
+input[type=range]::-webkit- -thumb {
     margin-top: -0.3125rem;
-    background-color: var(--range-slider-color);
+    background-color: var(--range- -color);
     width: .9375rem;
     height: .9375rem;
-    border: .0625rem solid var(--range-slider-color);
+    border: .0625rem solid var(--range- -color);
     border-radius: 50%;
 }
 
 input[type=range]::-moz-range-thumb {
-    background-color: var(--range-slider-color);
+    background-color: var(--range- -color);
     width: .9375rem;
     height: .9375rem;
-    border: .0625rem solid var(--range-slider-color);
+    border: .0625rem solid var(--range- -color);
     border-radius: 50%;
 }
 
 /* Estilo al "track" o la barra de desplazamiento : */
-input[type=range]::-webkit-slider-runnable-track {
+input[type=range]::-webkit- -runnable-track {
     background-color: var(--range-track-color);
     height: .3125rem;
     border-radius: .625rem;
