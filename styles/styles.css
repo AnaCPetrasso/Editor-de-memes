@@ -162,6 +162,7 @@ main {
     width: 38.125rem;
     flex-direction: column;
     background-color: #fff;
+    position: fixed;
 }
 
 .meme__img {
@@ -170,6 +171,7 @@ main {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 0;
 }
 
 .meme__text {
@@ -178,8 +180,28 @@ main {
     text-align: center;
     font-size: 2.5rem;
     color: #000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #fff;
+    z-index: 1;
+    line-height: 1;
 }
+#meme__top__text {
+    position: absolute;
+    top: 0;
+    width: 38.125rem;
+}
+#meme__bottom__text{
+    position: absolute;
+    bottom: 0;
+    width: 38.125rem;
 
+}
+.outline__dark{
+    -webkit-text-stroke: 2px #000
+}
+.outline__light{
+    -webkit-text-stroke: 2px #fff
+}
 .download__btn {
     font-size: 1rem;
     background-color: #4CC713;
