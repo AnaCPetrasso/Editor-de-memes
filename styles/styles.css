@@ -40,7 +40,7 @@
 }
 
 
-/*====================== estilos generales ================================== */
+/*====================== GENERAL STYLES ================================== */
 h1{
     font-size: 2rem;
 }
@@ -282,7 +282,7 @@ aside {
     color: var(--font-color-primary);
 }
 
-/* _________________  IMAGEN ________________ */
+/* _________________  IMAGE PANEL ________________ */
 
 /* -----URL----- */
 .url {
@@ -291,7 +291,7 @@ aside {
 }
 
 
-/* -----FONDO----- */
+/* -----BACKGROUND----- */
 .bkgd {
     display: flex;
     flex-direction: column;
@@ -343,7 +343,7 @@ input[type=color] {
     border-radius: 50%;
 }
 
-/* -----FILTROS----- */
+/* -----FILTERS----- */
 .filters {
     display: flex;
     flex-direction: column;
@@ -354,23 +354,22 @@ input[type='range'] {
     background-color: var(--aside-color);
 }
 
-/* En los navegadores de tipo webkit ( Google Chrome, Opera, etcstar ) tenemos que
-anular los estilos con los cuales las barras de desplazamiento vienen de fabrica.
-Para esto utilizamos -webkit-appearance: none;
-http://w3.unpocodetodo.info/css3/input-type-range.php*/
+/* In webkit type browsers i have to
+override the styles with which the scrollbars come from the factory.
+For this we use -webkit-appearance: none;*/
+
 input[type='range'],
-input[type='range']::-webkit- -runnable-track,
-input[type='range']::-webkit- -thumb {
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none;
 }
 
-/* Para dar estilo al "thumb" ( el botón o el control de la barra de desplazamiento )
-utilizamos estas reglas de estilo:
-( En los navegadores de tipo webkit necesitamos dar un margin-top negativo,
- por ejemplo margin-top: -0.5625rem.  */
-input[type=range]::-webkit- -thumb {
+/* To style the "thumb" (the button or the scrollbar control)
+(In webkit type browsers we need to give a negative margin-top,*/
+
+input[type=range]::-webkit-slider-thumb {
     margin-top: -0.3125rem;
-    background-color: var(--range- -color);
+    background-color: var(--range--color);
     width: .9375rem;
     height: .9375rem;
     border: .0625rem solid var(--range- -color);
@@ -385,8 +384,8 @@ input[type=range]::-moz-range-thumb {
     border-radius: 50%;
 }
 
-/* Estilo al "track" o la barra de desplazamiento : */
-input[type=range]::-webkit- -runnable-track {
+/*Style to the "track" or the scroll bar: */
+input[type=range]::-webkit-slider-runnable-track {
     background-color: var(--range-track-color);
     height: .3125rem;
     border-radius: .625rem;
@@ -398,7 +397,7 @@ input[type=range]::-moz-range-track {
     border-radius: .625rem;
 }
 
-/* -----BOTON RESTABLECER----- */
+/* -----reset filters btn----- */
 .panel__btn {
     margin-top: .3125rem;
     border: .0625rem solid var(--btn-color);
@@ -414,8 +413,8 @@ input[type=range]::-moz-range-track {
     background-color: var(--hover-color);
 }
 
-/* _________________  TEXTO  ________________ */
-/* -----TEXTO SUPERIOR E INFERIOR----- */
+/* _________________  TEXT PANEL  ________________ */
+/* -----TOP & BOTTOM TEXT----- */
 .text {
     
     display: flex;
@@ -435,7 +434,7 @@ input[type=range]::-moz-range-track {
     flex-grow: 10;
 }
 
-/* -----FUENTE----- */
+/* -----FONT----- */
 .font {
     display: flex;
     flex-direction: column;
@@ -466,7 +465,7 @@ input[type=range]::-moz-range-track {
     background-color: var(--hover-color);
 }
 
-/* -----COLOR Y FONDO----- */
+/* -----COLOR AND BACKGROUND----- */
 .color {
     display: flex;
     justify-content: space-between;
@@ -523,7 +522,7 @@ input[type=range]::-moz-range-track {
     border: .0625rem solid black
 }
 
-/* ----- CONTORNO ----- */
+/* ----- TEXT OUTLINE ----- */
 .controller__outline {
     display: flex;
     flex-wrap: wrap;
@@ -545,8 +544,7 @@ input[type=range]::-moz-range-track {
     background-color: var(--hover-color)
 }
 
-/* -----  ESPACIADO ----- */
-/* ----- INTERLINEADO ----- */
+/* -----  SPACING & LEADING----- */
 .spacing,
 .leading {
     display: flex;
@@ -593,7 +591,7 @@ a:link {
     font-family: 'Times New Roman', Times, serif;
 }
 
-/*====================== responsive design ================================== */
+/*====================== RESPONSIVE DESIGN================================== */
 @media (max-width:1300px) {
     main {
         height: 85vh;
@@ -603,12 +601,33 @@ a:link {
         bottom: 1.25rem;
 
     }
+    aside{
+        overflow-y: scroll;
+    }
     footer {
         display: none;
     }
 }
 @media (max-width:700px){
+    .meme {
+        height: 50vh;
+        width: 80vw;
+        
+    }
+    #meme__top__text {
+        position: absolute;
+        top: 0;
+        width: 80vw;
+    }
+    
+    #meme__bottom__text {
+        position: absolute;
+        bottom: 0;
+        width: 80vw;
+    
+    }
     aside{
         width: 100vw;
+        
     }
 }

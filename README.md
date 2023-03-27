@@ -1,7 +1,7 @@
 ![BANNER](https://user-images.githubusercontent.com/116232147/215499863-f4d08071-b4cf-4dc1-bcce-b383ca7040bf.png)
-# Editor de memes 
+# Generador de memes 
 
-Este es un generador de memes creado para presentar como profecto final del **Módulo 2 - JavaScript** para el curso de desarrollo frontend de ADA.
+Este es un generador de memes creado para presentar como projecto final del **Módulo 2 - JavaScript** para el curso de desarrollo frontend de ADA.
 17va Frontend Online.
 
 ## Contenido 
@@ -32,11 +32,13 @@ Los paneles de "IMAGEN" y "TEXTO" se alternan y cada uno permite modificar disti
 ![display1](./img/meme2.png)
 ![display1](./img/meme3.png)
 
+[Volver](#contenido)
 ### Paleta de colores
 La paleta de colores usada es:
 ![colorpalet1](./img/pagesfocus.png)
 ![colorpalet2](./img/pagestyles.png)
 
+[Volver](#contenido)
 ### Fuentes
 La fuente usada para la pagina es **Open Sans**. Y para el editor de memes se utilizan:
 - Arial
@@ -49,9 +51,13 @@ La fuente usada para la pagina es **Open Sans**. Y para el editor de memes se ut
 - Verdana
 - Times New Roman 
 
+[Volver](#contenido)
+
 ### Imágenes 
 Los iconos utilizados son de: 
 - [Font Awesome](https://fontawesome.com/)
+
+### Screenshots 
 
 ## Sobre mi 👩‍💻
 Soy estudiante de Desarrollo Frontend en ADA, estudiante de ingenieria química y profesora de química. 

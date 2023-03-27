@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="generador de memes, trabajo final módulo 2 de desarrollo frontend ADA">
+    <meta name="keywords" content="HTML, CSS , JavaScript, Desarrollo Frontend, meme, memegenerator">
     <script src="https://kit.fontawesome.com/8f1dad4900.js" crossorigin="anonymous"></script>
-
-
     <link href="https://fonts.cdnfonts.com/css/american-typewriter" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,9 +41,9 @@
         </div>
         <button class="download__btn" id="download__btn"><i class="fa-solid fa-download"></i>Descargar meme</button>
     </main>
-    <!-- PANEL DE IMAGEN este panel va a aparecer cuando el usuario haga click en el boton "Imagen" del menu del header -->
+    <!-- IMAGE PANEL This panel will appear when the user clicks on the "Imagen" button in the header menu -->
     <aside class="img__panel">
-        <!-- Boton para cerrar panel lateral aparece cuando el ancho de la pantalla es menor a 1300px -->
+        <!-- Button to close side panel appears when the screen width is less than 1300px  -->
         <button class="close__btn hidden" id="close__btn__img" aria-label="cerrar panel">
             <i class="fa-sharp fa-solid fa-circle-xmark"></i>
         </button> 
@@ -53,7 +53,7 @@
             <h3 class="controller__title">URL</h3>
             <input type="url" name="url" id="url" placeholder="https://example.com">
         </div>
-        <!-- FONDO -->
+        <!-- BACKGROUND -->
         <div class="panel__controller bkgd">
             <h3 class="controller__title">FONDO</h3>
             <div class="controller__bkgd">
@@ -71,7 +71,7 @@
                 </select>
             </div>
         </div>
-        <!-- FILTROS  -->
+        <!-- FILTERS  -->
         <div class="panel__controller filters">
             <h3 class="controller__title">FILTROS</h3>
             <!-- brightness -->
@@ -107,14 +107,14 @@
         <button class="panel__btn" id="reset__filters__btn">Reestablecer filtros</button>
     </aside>
 
-    <!-- PANEL DE TEXTO -->
+    <!-- TEXT PANEL This panel will appear when the user clicks on the "Texto" button in the header menu -->
     <aside class="text__panel">
-        <!-- Boton para cerrar panel lateral aparece cuando el ancho de la pantalla es menor a 1300px -->
-        <button class="close__btn hidden" id="close__btn__text" aria-label="cerrar panel">
+        <!-- Button to close side panel appears when the screen width is less than 1300px -->
+        <button class="close__btn" id="close__btn__text" aria-label="cerrar panel">
             <i class="fa-sharp fa-solid fa-circle-xmark"></i>
         </button> 
         <h2 class="panel__title">TEXTO</h2>
-        <!-- TEXTO SUPERIOR -->
+        <!-- TOP TEXT -->
         <div class="panel__controller text">
             <h3 class="controller__title">TEXTO SUPERIOR</h3>
             <textarea name="top__text" id="top__text" cols="10" rows="1" placeholder="TOP TEXT"></textarea>
@@ -123,7 +123,7 @@
             <input type="checkbox" name="top__text__checkbox " id="top__text__checkbox">
             <span>Sin texto superior </span>
         </div>
-        <!-- TEXTO INFERIOR -->
+        <!-- BOTTOM TEXT -->
         <div class="panel__controller text">
             <h3 class="controller__title">TEXTO INFERIOR</h3>
             <textarea name="bottom__text" id="bottom__text" cols="10" rows="1" placeholder="BOTTOM TEXT"></textarea>
@@ -132,7 +132,7 @@
             <input type="checkbox" name="bottom__text__checkbox " id="bottom__text__checkbox">
             <span>Sin texto inferior </span>
         </div>
-        <!-- FUENTE -->
+        <!-- FONT -->
         <div class="panel__controller font">
             <h3 class="controller__title">FUENTE</h3>
             <select name="font__selector" id="font__selector">
@@ -146,7 +146,7 @@
                 <option value="Verdana, sans-serif">Verdana</option>
                 <option value="Times, Times New Roman, serif">Times New Roman</option>
             </select>
-            <!-- alineación de fuente-->
+            <!-- font alignment-->
             <div class="alignment">
                 <input type="number" id="font__size" min="12" placeholder="40">
                 <button class="alignment__btn" id="alignment__left"><i class="fa-solid fa-align-left"></i></button>
@@ -154,9 +154,9 @@
                 <button class="alignment__btn" id="alignment__right"><i class="fa-solid fa-align-right"></i></button>
             </div>
         </div>
-        <!-- COLOR Y FONDO -->
+        <!-- COLOR AND BACKGROUND-->
         <div class="panel__controller color">
-            <!-- Color de texto -->
+            <!--text color -->
             <div class="controller__color">
                 <h3 class="controller__title">COLOR</h3>
                 <div class="color__selector">
@@ -164,7 +164,7 @@
                     <span class="text__color__code">#00000</span>
                 </div>
             </div>
-            <!-- Color de fondo de texto -->
+            <!--Text background color -->
             <div class="controller__color">
                 <h3 class="controller__title">FONDO</h3>
                 <div class="bkgd__selector">
@@ -173,12 +173,12 @@
                 </div>
             </div>
         </div>
-        <!-- fondo transparente -->
+        <!-- Transparent background -->
         <div class="checkbox">
             <input type="checkbox" name="transparent__bkdg" id="transparent__checkbox">
             <span> Fondo transparente</span>
         </div>
-        <!-- CONTORNO DE TEXTO -->
+        <!--TEXT OUTLINE -->
         <div class="panel__controller outline" id="outline__text">
             <h3 class="controller__title">CONTORNO</h3>
             <div class="controller__outline">
@@ -187,12 +187,12 @@
                 <button class="outline__btn" id="outline__dark__btn">Oscuro</button>
             </div>
         </div>
-        <!-- ESPACIADO-->
+        <!-- SPACING-->
         <div class="panel__controller  pacing">
             <h3 class="controller__title">ESPACIADO</h3>
             <input type="number" name="spacing" id="spacing" min="10" max="50" placeholder="30">
         </div>
-        <!-- leading -->
+        <!-- LEADING -->
         <div class="panel__controller leading">
             <h3 class="controller__title">INTERLINEADO</h3>
             <select name="leading" id="leading">
@@ -205,6 +205,7 @@
             </select>
         </div>
     </aside>
+    <!-- FOOTER -->
     <footer class="footer">
         <ul class="footer__ul">
             <li><a href="https://www.linkedin.com/in/ana-carolina-petrasso/"><i class="fa-brands fa-linkedin"></i></a>
@@ -215,7 +216,9 @@
         </ul>
         <p class="footer__text"> Copyright &copy; 2023 Ana Carolina Petrasso</p>
     </footer>
+    <!-- SCRIPT -->
     <script src="script/main.js"></script>
+    <!-- I add these to be able to make the download button because with what was on discord I couldn't make it work correctly -->
     <script src="script/FileSaver.js"></script>
     <script src="script/dom-to-image.js"></script>
 

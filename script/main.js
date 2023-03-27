@@ -9,12 +9,12 @@ const defaultValues = () => {
     $("#text___bkgd").value = "#ffffff"
     $("#transparent__checkbox").checked = ""
     $("#bkgd__color").value = "#ffffff"
-    $("#bkgd__effect").value ="unset"
+    $("#bkgd__effect").value = "unset"
     $(".img__panel").classList.remove("hidden")
     $(".text__panel").classList.add("hidden")
-   
+
 }
-//___________________ IMG PANEL_______________________
+//___________________ IMAGE PANEL_______________________
 const filters = () => {
     const brightness = $("#brightness").value
     const opacity = $("#opacity").value
@@ -164,22 +164,24 @@ const textPanel = () => {
 }
 //_______________________ CLOSE PANEL____________________
 //function to hidde panel when max-width:1300px
-
+//To do this I use this information https://desarrolloweb.com/articulos/detectar-media-queries-javascript
+//& https://kinsta.com/es/blog/media-queries-javascript/#opcin-1-controlar-las-dimensiones-de-la-ventana-grfica 
 var mediaqueryList = window.matchMedia("(max-width: 1300px)")
-mediaqueryList.addListener(function (e) {
+function screenChange(e) {
     if (e.matches) {
         $("#close__btn__img").classList.remove("hidden")
-        $("#close__btn__text").classList.remove("hidden")
-    }
-    else {
+        $("#close__btn__text").classList.remove("hidden")    
+    } else {
         $(".close__btn").classList.add("hidden")
-        $("#close__btn__text").classList.add("hidden")
+        $("#close__btn__text").classList.add("hidden")  
     }
-})
-$("#close__btn__img").addEventListener("click",()=>{
+}
+mediaqueryList.addListener(screenChange)
+
+$("#close__btn__img").addEventListener("click", () => {
     $(".img__panel").classList.add("hidden")
 })
-$("#close__btn__text").addEventListener("click",()=>{
+$("#close__btn__text").addEventListener("click", () => {
     $(".text__panel").classList.add("hidden")
 })
 //_______________________DOWNLOAD MEME____________________
@@ -224,5 +226,6 @@ const initialize = () => {
     resetFilters()
     imgPanel()
     textPanel()
+    screenChange(mediaqueryList)
 }
 window.addEventListener("load", initialize)
