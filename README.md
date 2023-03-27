@@ -8,7 +8,7 @@ Este es un generador de memes creado para presentar como projecto final del **M�
 - [Sobre la pagina](#sobre-la-pagina-🖥️) 
     - [Estructura](#estructura) 
     - [Paleta de colores](#paleta-de-colores)
-    - [Fuente](#fuente)
+    - [Fuente](#fuentes)
     - [Imágenes](#imágenes) 
     - [Screenshots](#screenshots)
 - [Sobre mi](#sobre-mi-👩‍💻) 
@@ -23,20 +23,20 @@ Lo importante de este trabajo es la impimentación de JavaScript para las distin
 
 La aplicacion alterna entre modo claro y modo oscuro permitiendo una mejor accesibilidad a la pagina.
 
-![lightmode](./img/lightmode.png)
-![darkmode](./img/darkmode.png)
+![lightmode](./img/3.png)
+![darkmode](./img/2.png)
 
 Los paneles de "IMAGEN" y "TEXTO" se alternan y cada uno permite modificar distintos aspectos del meme como la saturación de la imagen, su opaciodad y el color de texto entre otros. 
 
-![display1](./img/meme1.png)
-![display1](./img/meme2.png)
-![display1](./img/meme3.png)
+![display1](./img/4.png)
+![display1](./img/5.png)
+
 
 [Volver](#contenido)
 ### Paleta de colores
 La paleta de colores usada es:
-![colorpalet1](./img/pagesfocus.png)
-![colorpalet2](./img/pagestyles.png)
+![colorpalet](./img/1.png)
+
 
 [Volver](#contenido)
 ### Fuentes
@@ -57,7 +57,8 @@ La fuente usada para la pagina es **Open Sans**. Y para el editor de memes se ut
 Los iconos utilizados son de: 
 - [Font Awesome](https://fontawesome.com/)
 
-### Screenshots 
+### Diseño Responsive
+![responsive](./img/responsive.png) 
 
 ## Sobre mi 👩‍💻
 Soy estudiante de Desarrollo Frontend en ADA, estudiante de ingenieria química y profesora de química. 
