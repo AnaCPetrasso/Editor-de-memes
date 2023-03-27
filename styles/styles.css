@@ -41,6 +41,9 @@
 
 
 /*====================== estilos generales ================================== */
+h1{
+    font-size: 2rem;
+}
 ul {
     list-style: none;
 }
@@ -255,7 +258,7 @@ aside {
 .panel__title {
     padding: 1.25rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .controller__title {

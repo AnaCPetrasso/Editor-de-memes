@@ -9,8 +9,10 @@ const defaultValues = () => {
     $("#text___bkgd").value = "#ffffff"
     $("#transparent__checkbox").checked = ""
     $("#bkgd__color").value = "#ffffff"
+    $("#bkgd__effect").value ="unset"
     $(".img__panel").classList.remove("hidden")
     $(".text__panel").classList.add("hidden")
+   
 }
 //___________________ IMG PANEL_______________________
 const filters = () => {
