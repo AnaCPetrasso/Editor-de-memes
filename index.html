@@ -39,15 +39,14 @@
             <div class="meme__img"></div>
             <p class="meme__text bottom" id="meme__bottom__text">BOTTOM TEXT</p>
         </div>
-        <button class="download__btn" id="download__btn"><i class="fa-solid fa-download"></i>Descargar
-            meme</button>
+        <button class="download__btn" id="download__btn"><i class="fa-solid fa-download"></i>Descargar meme</button>
     </main>
     <!-- PANEL DE IMAGEN este panel va a aparecer cuando el usuario haga click en el boton "Imagen" del menu del header -->
     <aside class="img__panel">
         <!-- Boton para cerrar panel lateral aparece cuando el ancho de la pantalla es menor a 1300px -->
-        <button class="close__btn" aria-label="cerrar panel">
+        <button class="close__btn hidden" id="close__btn__img" aria-label="cerrar panel">
             <i class="fa-sharp fa-solid fa-circle-xmark"></i>
-        </button>
+        </button> 
         <h2 class="panel__title">IMAGEN</h2>
         <!-- URL -->
         <div class="panel__controller url">
@@ -107,12 +106,13 @@
         <!-- reset filters btn -->
         <button class="panel__btn" id="reset__filters__btn">Reestablecer filtros</button>
     </aside>
+
     <!-- PANEL DE TEXTO -->
     <aside class="text__panel">
         <!-- Boton para cerrar panel lateral aparece cuando el ancho de la pantalla es menor a 1300px -->
-        <button class="close__btn" aria-label="cerrar panel">
+        <button class="close__btn hidden" id="close__btn__text" aria-label="cerrar panel">
             <i class="fa-sharp fa-solid fa-circle-xmark"></i>
-        </button>
+        </button> 
         <h2 class="panel__title">TEXTO</h2>
         <!-- TEXTO SUPERIOR -->
         <div class="panel__controller text">
@@ -188,12 +188,12 @@
             </div>
         </div>
         <!-- ESPACIADO-->
-        <div class="panel__control spacing">
+        <div class="panel__controller  pacing">
             <h3 class="controller__title">ESPACIADO</h3>
             <input type="number" name="spacing" id="spacing" min="10" max="50" placeholder="30">
         </div>
         <!-- leading -->
-        <div class="panel__control leading">
+        <div class="panel__controller leading">
             <h3 class="controller__title">INTERLINEADO</h3>
             <select name="leading" id="leading">
                 <option value="0.8">0.8</option>

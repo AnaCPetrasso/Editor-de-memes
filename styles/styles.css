@@ -247,7 +247,7 @@ aside {
     right: 0;
     top: 0;
     z-index: 1;
-    width: 250px;
+    width: 260px;
     height: 100vh;
     padding: 1.25rem .625rem;
 }
@@ -255,6 +255,7 @@ aside {
 .panel__title {
     padding: 1.25rem;
     text-align: center;
+    font-size: 2rem;
 }
 
 .controller__title {
@@ -263,7 +264,7 @@ aside {
 }
 
 .panel__controller {
-    margin: .3125rem .3125rem
+    margin: 5px 10px 5px 5px;
 }
 
 .close__btn {
@@ -279,12 +280,6 @@ aside {
 }
 
 /* _________________  IMAGEN ________________ */
-
-.panel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 /* -----URL----- */
 .url {
@@ -419,7 +414,7 @@ input[type=range]::-moz-range-track {
 /* _________________  TEXTO  ________________ */
 /* -----TEXTO SUPERIOR E INFERIOR----- */
 .text {
-    margin: .625rem 0rem .1875rem;
+    
     display: flex;
     flex-direction: column;
 }

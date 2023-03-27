@@ -162,24 +162,24 @@ const textPanel = () => {
 }
 //_______________________ CLOSE PANEL____________________
 //function to hidde panel when max-width:1300px
+
 var mediaqueryList = window.matchMedia("(max-width: 1300px)")
 mediaqueryList.addListener(function (e) {
     if (e.matches) {
-        $("#close__btn").classList.remove("hidden")
+        $("#close__btn__img").classList.remove("hidden")
+        $("#close__btn__text").classList.remove("hidden")
     }
     else {
-        $("#close__btn").classList.add("hidden")
+        $(".close__btn").classList.add("hidden")
+        $("#close__btn__text").classList.add("hidden")
     }
 })
-const closePanel = () => {
+$("#close__btn__img").addEventListener("click",()=>{
     $(".img__panel").classList.add("hidden")
+})
+$("#close__btn__text").addEventListener("click",()=>{
     $(".text__panel").classList.add("hidden")
-}
-let closeBtn = document.querySelectorAll('.close__btn');
-for (const element of closeBtn) {
-    element.addEventListener("click", closePanel)
-}
-
+})
 //_______________________DOWNLOAD MEME____________________
 const downloadMeme = () => {
     domtoimage.toBlob(document.getElementById('meme'))
