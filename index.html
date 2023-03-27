@@ -45,7 +45,7 @@
     <!-- PANEL DE IMAGEN este panel va a aparecer cuando el usuario haga click en el boton "Imagen" del menu del header -->
     <aside class="img__panel">
         <!-- Boton para cerrar panel lateral aparece cuando el ancho de la pantalla es menor a 1300px -->
-        <button class="close__btn" id="close__btn" hidden aria-label="cerrar panel">
+        <button class="close__btn" aria-label="cerrar panel">
             <i class="fa-sharp fa-solid fa-circle-xmark"></i>
         </button>
         <h2 class="panel__title">IMAGEN</h2>
@@ -109,6 +109,10 @@
     </aside>
     <!-- PANEL DE TEXTO -->
     <aside class="text__panel">
+        <!-- Boton para cerrar panel lateral aparece cuando el ancho de la pantalla es menor a 1300px -->
+        <button class="close__btn" aria-label="cerrar panel">
+            <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+        </button>
         <h2 class="panel__title">TEXTO</h2>
         <!-- TEXTO SUPERIOR -->
         <div class="panel__controller text">
@@ -214,7 +218,7 @@
     <script src="script/main.js"></script>
     <script src="script/FileSaver.js"></script>
     <script src="script/dom-to-image.js"></script>
-    
+
 </body>
 
 </html>

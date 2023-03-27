@@ -11,8 +11,9 @@
     --range--color: #F2F2E4;
     --range-track-color: #727365;
 }
+
 /* color palet for dark mode */
-[theme=dark-theme]{
+[theme=dark-theme] {
     --bkgd-primary: #262626;
     --bkgd-secondary: #3F403B;
     --aside-color: #727365;
@@ -24,6 +25,7 @@
     --range--color: #262626;
     --range-track-color: #3F403B;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +34,8 @@
     color: var(--font-color-primary);
     font-size: 15px;
 }
-.hidden{
+
+.hidden {
     display: none;
 }
 
@@ -49,6 +52,7 @@ a {
 i {
     font-size: 1.2rem;
 }
+
 input[type=url] {
     background-color: var(--bkgd-primary);
     height: 2.5rem;
@@ -56,10 +60,12 @@ input[type=url] {
     border-radius: .3125rem;
     padding: .5rem;
 }
+
 input[type=url]:focus {
     outline: solid .125rem var(--focus-color);
 }
-textarea{
+
+textarea {
     height: 2.5rem;
     border: .0625rem solid #000;
     border-radius: .3125rem;
@@ -74,7 +80,7 @@ textarea:focus {
 
 input[type=number] {
     height: 2.5rem;
-    border: .0625rem solid ;
+    border: .0625rem solid;
     border-radius: .3125rem;
     margin: .3125rem 0rem;
     padding: .625rem;
@@ -88,7 +94,7 @@ input[type=number]:focus {
 
 select {
     height: 2.5rem;
-    border: .0625rem solid ;
+    border: .0625rem solid;
     border-radius: .3125rem;
     margin: .3125rem 0rem;
     font-size: 1rem;
@@ -135,13 +141,15 @@ header {
 .menu__btn:hover {
     background-color: var(--hover-color);
 }
-#switch-theme{
+
+#switch-theme {
     width: 8.75rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#switch-text{
+
+#switch-text {
     width: 80%;
 }
 
@@ -161,8 +169,7 @@ main {
     height: 38.125rem;
     width: 38.125rem;
     flex-direction: column;
-    background-color: #fff;
-    position: fixed;
+    position: relative;
 }
 
 .meme__img {
@@ -171,9 +178,7 @@ main {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 0;
     background-blend-mode: unset;
-    filter: brightness(1) opacity(1) contrast(100%) blur(0px) grayscale(0%) sepia(0%) hue-rotate(0deg) saturate(100%) invert(0);
 }
 
 .meme__text {
@@ -187,23 +192,28 @@ main {
     z-index: 1;
     line-height: 1;
 }
+
 #meme__top__text {
     position: absolute;
     top: 0;
     width: 38.125rem;
 }
-#meme__bottom__text{
+
+#meme__bottom__text {
     position: absolute;
     bottom: 0;
     width: 38.125rem;
 
 }
-.outline__dark{
+
+.outline__dark {
     -webkit-text-stroke: 2px #000
 }
-.outline__light{
+
+.outline__light {
     -webkit-text-stroke: 2px #fff
 }
+
 .download__btn {
     font-size: 1rem;
     background-color: #4CC713;
@@ -237,7 +247,7 @@ aside {
     right: 0;
     top: 0;
     z-index: 1;
-    width: 17vw;
+    width: 250px;
     height: 100vh;
     padding: 1.25rem .625rem;
 }
@@ -256,6 +266,18 @@ aside {
     margin: .3125rem .3125rem
 }
 
+.close__btn {
+    background-color: transparent;
+    width: fit-content;
+    border: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.close__btn i {
+    color: var(--font-color-primary);
+}
+
 /* _________________  IMAGEN ________________ */
 
 .panel {
@@ -271,20 +293,20 @@ aside {
 }
 
 
-
-
 /* -----FONDO----- */
 .bkgd {
     display: flex;
     flex-direction: column;
 }
 
-.controller__bkgd{
+.controller__bkgd {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.bkgd__color,.bkgd__effect{
+
+.bkgd__color,
+.bkgd__effect {
     width: 40%;
     display: flex;
     flex-direction: row;
@@ -295,9 +317,11 @@ aside {
     padding: .3125rem;
     background-color: var(--bkgd-primary);
 }
-.bkgd__effect{
+
+.bkgd__effect {
     margin: 0;
 }
+
 input[type=color] {
     background: none;
     border: 0;
@@ -306,6 +330,7 @@ input[type=color] {
     padding: 0;
     width: 25px;
 }
+
 ::-webkit-color-swatch-wrapper {
     padding: 0;
 }
@@ -314,6 +339,7 @@ input[type=color] {
     border: 0;
     border-radius: 50%;
 }
+
 ::-moz-color-swatch {
     border: 0;
     border-radius: 50%;
@@ -397,16 +423,20 @@ input[type=range]::-moz-range-track {
     display: flex;
     flex-direction: column;
 }
-.checkbox{
+
+.checkbox {
     display: flex;
     align-items: center;
 }
+
 .checkbox input {
     flex-grow: 0.5;
 }
-.checkbox span{
+
+.checkbox span {
     flex-grow: 10;
 }
+
 /* -----FUENTE----- */
 .font {
     display: flex;
@@ -433,9 +463,11 @@ input[type=range]::-moz-range-track {
     border-radius: .3125rem;
     cursor: pointer;
 }
-.alignment__btn:hover{
+
+.alignment__btn:hover {
     background-color: var(--hover-color);
 }
+
 /* -----COLOR Y FONDO----- */
 .color {
     display: flex;
@@ -448,7 +480,8 @@ input[type=range]::-moz-range-track {
 
 }
 
-.color__selector, .bkgd__selector {
+.color__selector,
+.bkgd__selector {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -459,7 +492,7 @@ input[type=range]::-moz-range-track {
     border-radius: .3125rem;
     padding: .625rem;
     margin-top: .3125rem;
-    background-color:var(--bkgd-primary);
+    background-color: var(--bkgd-primary);
 }
 
 .controller__color input,
@@ -490,7 +523,7 @@ input[type=range]::-moz-range-track {
 .controller__color input::-moz-color-swatch {
     border-radius: 100%;
     border: .0625rem solid black
-} 
+}
 
 /* ----- CONTORNO ----- */
 .controller__outline {
@@ -499,6 +532,7 @@ input[type=range]::-moz-range-track {
     justify-content: space-between;
     align-items: center;
 }
+
 .outline__btn {
     font-size: 0.9rem;
     height: 2.5rem;
@@ -507,16 +541,20 @@ input[type=range]::-moz-range-track {
     padding: .625rem;
     background-color: var(--bkgd-primary);
     cursor: pointer;
-} 
-.outline__btn:hover{
+}
+
+.outline__btn:hover {
     background-color: var(--hover-color)
 }
+
 /* -----  ESPACIADO ----- */
 /* ----- INTERLINEADO ----- */
-.spacing,.leading {
+.spacing,
+.leading {
     display: flex;
     flex-direction: column;
-} 
+}
+
 /* ~~~~~~~~~~~   FOOTER  ~~~~~~~~~~~~~~~~~~~ */
 footer {
     height: 8vh;
@@ -556,4 +594,23 @@ a:link {
 .footer__text {
     font-family: 'Times New Roman', Times, serif;
 }
+
 /*====================== responsive design ================================== */
+@media (max-width:1300px) {
+    main {
+        height: 85vh;
+    }
+    .download__btn {
+        position: fixed;
+        bottom: 1.25rem;
+
+    }
+    footer {
+        display: none;
+    }
+}
+@media (max-width:700px){
+    aside{
+        width: 100vw;
+    }
+}
